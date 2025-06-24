@@ -43,6 +43,35 @@ Un appel de paragraphe est toujours fait de la manière suivante, identé de cet
     THRU 0100-CRE-USR-FIN.
 ```
 ## Structure
+Entête avant le programme qui explique ce qu'il fait est obligatoire, il contiendra aussi les informations des trigrammes.
+
+TOUT code doit être commenté, pas besoin de commenter un `OPEN INPUT F-INPUT.`, car c'est très explicite, mais dès qu'une logique peut nécessiter une explication, on la donne, expliquer l'utilité des variables, des fd, et surtout des paragraphes est obligatoire.
+
+AUTHOR et DATE-WRITTEN (format `DATE-WRITTEN. JJ-MM-YYYY (fr).`) obligatoires.
+
+Jamais de code dans la `PROCEDURE DIVISION.`, tout code doit être écrit dans les paragraphes, à part l'appel des paragraphes eux-mêmes.
+
+`WS-DUMMY PIC .. VALUE` doit être utilisé avec parcimonie, dans de nombreux cas, il est plus clair d'initialiser une variable au moment où on s'en sert, je fais particulièrement référence aux indices (index au pluriel)
+
+L'utilisation de `LOCAL SECTION`. est interdit.
+
+Le code de la `PROCEDURE DIVISION.` DOIT commencer à la colonne 12, et non à la 8.
+
+L'identation doit être propre, et faite à chaque scope, l'indentation est FIXÉE à 4 colonnes. Si la fin des colonnes est atteinte, il est probable que plus de paragraphes auraient pu être créés.
+
+`PIC X(2)` est interdit, `PIC X(02)` est attendu.
+
+Tous les PIC doivent être alignés, dans la limite du raisonnable. Apprendre des raccourcis VSCode peut-être utile.
+
+Les niveaux d'accès des variables doivent être incrémentés par 5 à l'exception du premier : 01, 05, 10 .. etc.
+
+Toutes les variables indépendantes (Index etc) doivent être des variables 77.
+
+Les flags (88) doivent être utilisés dès que nécessaire, se renseigner sur cette pratique peut être intéressant.
+
+Les `MOVE .. TO` doivent être alignés.
+
+Toutes les `SCREEN SECTION` doivent être faites de sorte à fonctionner sur le format terminal de base, soit 80 colonnes par 24 lignes.
 ## Tests
 ### FICHIERS ENTRÉE-SORTIE : 
 ```
