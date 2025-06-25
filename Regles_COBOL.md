@@ -23,7 +23,8 @@ Et on aura, au niveau de l'entête du programme, une référence à tous les tri
 `* NOMBRE=NBR; VENTE=VNT; CLIENT=CLT;.`<br>
 Il pourrait dans le futur y avoir un outil qui permettrait une gestion plus simple et commune au projet des trigrammes, mais la solution n'existe pas encore.
 ### Noms des programmes
-Le nom d'un programme ne doit jamais dépasser **8 lettres**, et doit être écrit en **minuscule**. **Tirets interdits**, seules les **lettres** sont **autorisées**. Écrire aussi en trigramme, et penser à documenter ceux-ci aussi dans l'entête.
+Le nom d'un programme ne doit jamais dépasser **8 lettres**, et doit être écrit en **minuscule**. **Tirets interdits**, seules les **lettres** sont **autorisées**. Écrire aussi en trigramme, et penser à documenter ceux-ci aussi dans l'entête.<br>
+Le nom d'un Copybook doit toujours finir par ".cpy".
 ### Noms des variables
 ```
 WORKING STORAGE SECTION -> WS
