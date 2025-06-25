@@ -27,10 +27,11 @@ Le nom d'un programme ne doit jamais dépasser **8 lettres**, et doit être écr
 Le nom d'un Copybook doit toujours finir par ".cpy".
 ### Noms des variables
 ```
-WORKING STORAGE SECTION -> WS
-LINKAGE SECTION         -> LK
-FILE SECTION            -> F
-SCREEN SECTION          -> S
+WORKING STORAGE SECTION  -> WS
+LINKAGE SECTION          -> LK
+FILE SECTION             -> F
+SCREEN SECTION           -> S
+EXEC SQL DECLARE SECTION -> PG
 ```
 ### Les paragraphes
 Un paragraphe doit toujours suivre la nomenclature suivante : Sans oublier les trigrammes, et leur documentation dans l'entête. <br>
@@ -48,7 +49,9 @@ Entête avant le programme qui explique ce qu'il fait est obligatoire, il contie
 
 TOUT code doit être commenté, pas besoin de commenter un `OPEN INPUT F-INPUT.`, car c'est très explicite, mais dès qu'une logique peut nécessiter une explication, on la donne, expliquer l'utilité des variables, des fd, et surtout des paragraphes est obligatoire. Un commentaire commence par une majuscule, fini par un point, et est précédé d'un espace. Un commentaire ne dépasse pas la colonne 72.
 
-Un sous-programme doit toujours se finir par `EXIT PROGRAM`. PAS DE `END PROGRAM.`
+Un sous-programme doit toujours se finir par `EXIT PROGRAM`. PAS DE `END PROGRAM.`.
+
+Un COPY s'écrit de la façon suivante : `COPY test.`, et non `COPY "test.cpy".`
 
 AUTHOR et DATE-WRITTEN (format `DATE-WRITTEN. JJ-MM-YYYY (fr).`) obligatoires.
 
