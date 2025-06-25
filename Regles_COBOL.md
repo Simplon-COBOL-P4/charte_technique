@@ -46,7 +46,7 @@ Un appel de paragraphe est toujours fait de la manière suivante, identé de cet
 ## Structure
 Entête avant le programme qui explique ce qu'il fait est obligatoire, il contiendra aussi les informations des trigrammes.
 
-TOUT code doit être commenté, pas besoin de commenter un `OPEN INPUT F-INPUT.`, car c'est très explicite, mais dès qu'une logique peut nécessiter une explication, on la donne, expliquer l'utilité des variables, des fd, et surtout des paragraphes est obligatoire.
+TOUT code doit être commenté, pas besoin de commenter un `OPEN INPUT F-INPUT.`, car c'est très explicite, mais dès qu'une logique peut nécessiter une explication, on la donne, expliquer l'utilité des variables, des fd, et surtout des paragraphes est obligatoire. Un commentaire commence par une majuscule, fini par un point, et est précédé d'un espace.
 
 AUTHOR et DATE-WRITTEN (format `DATE-WRITTEN. JJ-MM-YYYY (fr).`) obligatoires.
 
