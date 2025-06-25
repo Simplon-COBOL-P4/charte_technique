@@ -48,6 +48,8 @@ Entête avant le programme qui explique ce qu'il fait est obligatoire, il contie
 
 TOUT code doit être commenté, pas besoin de commenter un `OPEN INPUT F-INPUT.`, car c'est très explicite, mais dès qu'une logique peut nécessiter une explication, on la donne, expliquer l'utilité des variables, des fd, et surtout des paragraphes est obligatoire. Un commentaire commence par une majuscule, fini par un point, et est précédé d'un espace. Un commentaire ne dépasse pas la colonne 72.
 
+Un sous-programme doit toujours se finir par `EXIT PROGRAM`. PAS DE `END PROGRAM.`
+
 AUTHOR et DATE-WRITTEN (format `DATE-WRITTEN. JJ-MM-YYYY (fr).`) obligatoires.
 
 Jamais de code dans la `PROCEDURE DIVISION.`, tout code doit être écrit dans les paragraphes, à part l'appel des paragraphes eux-mêmes.
